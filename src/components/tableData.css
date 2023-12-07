@@ -1,0 +1,128 @@
+/* Shared styles for tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table tr {
+  border: 1px solid #ccc;
+}
+
+/* Highlight table rows on hover */
+tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Common styles for buttons */
+button {
+  margin: 4px;
+  border: none;
+  padding: 5px;
+  background-color: white;
+}
+
+/* Styles for the edit form */
+.edit-form {
+  background: grey;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 300px;
+}
+
+.edit-form h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.edit-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-form label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-form input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Buttons within the edit form */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #3065c0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Cancel button style */
+.edit-form button.cancel {
+  background: #ccc;
+}
+
+/* No data message */
+.no-data-message {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .edit-form {
+    width: 80%;
+    padding: 6px;
+    font-size: 14px; /* Adjusted font size for better visibility */
+  }
+
+  .edit-form h2 {
+    font-size: 18px; /* Adjusted font size for better visibility */
+  }
+
+  .edit-form label {
+    font-size: 14px;
+  }
+
+  .edit-form input {
+    font-size: 12px; /* Adjusted font size for better visibility */
+  }
+
+  .edit-form button {
+    font-size: 16px; /* Adjusted font size for better visibility */
+  }
+}

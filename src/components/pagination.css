@@ -1,0 +1,19 @@
+/* Your existing styles */
+.delete-button {
+  font-size: 8px;
+  text-align: center;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 320px) {
+  .delete-button {
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .custom-rounded-button {
+    font-size: 8px;
+  }
+}
